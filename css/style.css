@@ -12,6 +12,16 @@ header{
 	font-size:1.8vw;
 }
 
+h2{
+	font-weight: 100;
+	padding: 20px;
+}
+
+body{
+	background-color: #d2d8e0;
+	position: absolute;
+	height: 100%;
+}
 #logo, #headname{
 	float: left;
 }
@@ -34,11 +44,93 @@ header{
 }
 
 .card{
+	position: relative;
+	right: 0px;
 	display: block;
-	box-shadow: 2px grey;
+	align-content: space-between;
+	box-shadow: 10px red;
+	border-radius: 4px;
 	z-index: 4;
-	width: 40%;
-	height: 50%;
+	width: 30%;
+	height: 60%;
 	padding: 20px;
-	background-color: #d2d8e0;
+	background-color: #ffffff;
+}
+
+.inputs{
+	align-self: center;
+}
+
+form > div{
+	position: relative;
+	padding: 20px;
+}
+
+form > div > label{
+	position: absolute;
+	left: 26px;
+	top: 22px;
+	font-size: 1.1vw;
+	color: grey;
+}
+
+input{
+	outline: none;
+}
+
+input:focus + label{
+	position: absolute;
+	top: 4px;
+	left: 21px;
+	font-size: 1vw;
+	color: #3689ef;
+	-webkit-transition: 0.4s;
+	transition: 0.4s ease-out;
+}
+
+div > input:valid + label{
+	position: absolute;
+	top: 4px;
+	left: 22px;
+	font-size: 1vw;
+	color: #3689ef;
+}
+
+form > a{
+	font-size: 1.1vw;
+	color: #3689ef;
+	padding: 7%;
+
+}
+
+input, input:focus{
+	border-width: 0 0 2px 0;
+}
+
+input:focus{
+	border-bottom-color: #3689ef;
+}
+
+#submitBtn{
+	float: right;
+}
+#submitBtn button{
+	background-color: #3689ef;
+	color: white;
+	border-color: #3689ef;
+	border-radius: 2px;
+	width: 8vw;
+	height: 3vw;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+
+p{
+    color:rgba(0, 0, 0, 0.568627);
+	font-size: 14px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 17.42px;/* Approximation due to font substitution */
+	padding: 0 20px 20px 20px;
 }
